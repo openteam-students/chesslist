@@ -1,4 +1,8 @@
 Chesslist::Application.routes.draw do
+  namespace :manage do
+    resources :users
+  end
+
   devise_for :users
 
   # The priority is based upon order of creation:
